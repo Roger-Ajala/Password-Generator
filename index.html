@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🔐 Gerador de Senhas</h1>
+
+  <input id="senha" readonly>
+
+  <div class="controls">
+    <label>Tamanho: <span id="tamanhoValor">12</span></label>
+    <input type="range" min="6" max="20" value="12" id="tamanho">
+  </div>
+
+  <div class="options">
+    <label><input type="checkbox" id="maiusculas" checked> Maiúsculas</label>
+    <label><input type="checkbox" id="numeros" checked> Números</label>
+    <label><input type="checkbox" id="simbolos"> Símbolos</label>
+  </div>
+
+  <button onclick="gerar()">Gerar</button>
+  <button onclick="copiar()">Copiar</button>
+
+  <div id="forca"></div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
